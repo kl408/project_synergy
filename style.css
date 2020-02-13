@@ -37,9 +37,22 @@ nav {
 }
 
 /* For home page */
+
+.welcome {
+  background-image: url("https://www.brickunderground.com/sites/default/files/styles/blog_primary_image/public/blog/images/4859177053_c3fb190917_o.jpg");
+}
+
 #headquote {
   font-family: 'Krub';
   font-size: 40px;
   margin-left: 100px;
-  margin-right: 700px;
+  margin-right: 800px;
+  /*margin-bottom: 500px;*/
+  background-color: rgba(69, 229, 190, 0.7);
+}
+
+#placeholder {
+  font-family: 'Krub';
+  font-size: 30px;
+  text-align: center;
 }
