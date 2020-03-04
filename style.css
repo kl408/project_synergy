@@ -1,4 +1,5 @@
 /* For sticky navigation bar */
+/*
 nav {
   display: flex;
   justify-content: space-around;
@@ -7,6 +8,7 @@ nav {
   background-color: #000000;
   font-family: 'Poiret One';
 }
+*/
 
 .logo {
   text-transform: uppercase;
@@ -20,6 +22,7 @@ nav {
   justify-content: space-around;
   width: 30%;
   list-style: none;
+  flex-direction: row;
 }
 
 .navbar a{
@@ -27,6 +30,7 @@ nav {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
+  text-align: right;
 }
 
 .navbar a:hover{
@@ -36,8 +40,46 @@ nav {
   background-color: #45E5BE;
 }
 
+/* Updated navigation bar */
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: right;
+  align-items: center;
+  background: #37E596;
+  color: black;
+  height: 70px;
+  font-family: 'Krub'
+}
+
+.container {
+  max-width: 1160px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: 'Krub';
+  font-weight: bold;
+}
+
+.header-links {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Krub'
+}
+
+
 /* For home page */
 
+/* Welcome */
 .welcome {
   background-image: url("https://www.brickunderground.com/sites/default/files/styles/blog_primary_image/public/blog/images/4859177053_c3fb190917_o.jpg");
 }
@@ -51,8 +93,83 @@ nav {
   background-color: rgba(69, 229, 190, 0.7);
 }
 
+.welcome-caption{
+  background-color: rgba(69, 229, 190, 0.7);
+  ;
+}
+
+.phrase {
+  font-family: 'Krub';
+  color: #28CDC3;
+}
+
+
 #placeholder {
   font-family: 'Krub';
   font-size: 30px;
   text-align: center;
+}
+
+.caption {
+  font-family: 'Krub'
+  font-weight: bold;
+}
+
+/* Section 1*/
+.intro_paragraph {
+  font-family: : 'Krub';
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.photo-right {
+  display: flex;
+  justify-content: center;
+}
+
+/* Section 2*/
+.photo-left {
+  display: flex;
+  justify-content: center;
+}
+
+/* Section 3 - Three boxes */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  font-family: 'Krub';
+  background-color: #37E596;
+}
+
+.grid-item-title{
+  font-weight: bold;
+}
+
+/* Footer */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer.page-footer {
+  height: 600px;
+  padding-top: 60px;
+}
+
+footer
+{
+  color: #37E596;
+  background-color: #353D3A;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 100px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
