@@ -237,3 +237,31 @@ footer
   margin-left: auto;
   margin-right: auto;
 }
+
+
+/*FAQ Page*/
+.help_section{
+  margin-top: 50px;
+
+}
+
+.question_list {
+  font-family: 'Krub';
+  background-color: rgba(69, 229, 190, 0.7);
+}
+
+.question {
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 30px;
+}
+
+
+/*Contact Page*/
+#contact_form {
+  margin-left: 40px;
+}
+
+#contacttitle {
+  color:  #37E596;
+}
