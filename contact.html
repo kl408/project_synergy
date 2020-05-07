@@ -4,6 +4,12 @@
   <head>
     <title>ADCHASE</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script> 
+
+    <!-- Text animations -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Linking fonts from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
@@ -32,7 +38,7 @@
               <a href="product.html"> Product </a>
             </div>
             <div class="header-link ml-4 mr-4">
-              <a href="#"> FAQ </a>
+              <a href="faq.html"> FAQ </a>
             </div>
             <div class="header-link ml-4 mr-4">
               <a href="contact.html"> Contact Us </a>
@@ -42,7 +48,7 @@
     </div>
 
     <!-- Caption -->
-    <div class="contact_statement">
+    <div class="contact_statement" style="margin-top: 30px;" data-aos="slide-right" data-aos-duration="200">
       <div class="container" style="display: block;">
           <div class="contact-title" style="opacity: 1.0;">
             <h1 id="contacttitle" style="text-align: center; min-height: 100px; margin-top: 40px;"> Wanna talk? Let's catch up. </h1>
@@ -108,11 +114,41 @@
     </div>
 
     <!-- Clipart -->
-    <div class="photo-right col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="photo-right col-sm-12 col-md-6 col-lg-6 col-xl-6" data-aos="slide-left" data-aos-duration="200">
       <img class="pb-4" src="contact_clipart.png" alt="" style="max-width:450px; height: 400px; width: 100%;">
     </div>
 
   </div>
+
+  <br><br>
+  <div class="map" data-aos="fade-in" data-aos-duration="600">
+    <div class="container">
+      <div class="row">
+
+        <div class="photo-left col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1588883658507!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+        <div class="caption-left col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <h1 class="caption">
+            <span style="color: #37E596">ADCHASE HQ</span>
+            <br><br>
+            <p style="font-size: 20px;">
+              AB Existing Street <br>
+              New York, NY 10012
+            </p>
+            <br>
+            <p style="font-size: 20px;">
+              Email: team@adchase.com <br>
+              Phone: + 01 234 567 88
+            </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+
       
 
   <!-- Footer -->
@@ -230,6 +266,10 @@
   </footer>
   <!-- Footer -->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
   </body>
 
 </html>

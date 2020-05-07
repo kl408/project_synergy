@@ -4,6 +4,12 @@
 	<head>
 		<title>ADCHASE</title>
 		<link rel="stylesheet" href="style.css"> 
+		<script src="script.js"></script>
+
+		<!-- Text animations -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 		<!-- Linking fonts from Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
@@ -18,7 +24,7 @@
 
 	<body>
 		<!-- Navigation Header -->
-		<div class="header">
+		<div class="header" id="stickynav">
 	      <div class="container">
 	        <div class="logo">ADCHASE</div>
 	        <div class="header-links">
@@ -32,35 +38,27 @@
 	            <a href="product.html"> Product </a>
 	          </div>
 	          <div class="header-link ml-4 mr-4">
-	            <a href="#"> FAQ </a>
+	            <a href="faq.html"> FAQ </a>
 	          </div>
 	          <div class="header-link ml-4 mr-4">
 	            <a href="contact.html"> Contact Us </a>
 	          </div>
 	        </div>
-	         <!--<i class="fa fa-bars p-4" aria-hidden="true" style="font-size: 20px; cursor: pointer;"></i> -->
-
 	      </div>
 	    </div>
 
-		<!-- Caption -->
-		<!--<div class="container"> -->
-		<!--
-			<div class="welcome col-sm-12 col-md-6 col-lg-12 col-xl-12"> 
-				<br><br><br><br>
-				<h1 id="headquote"> Changing the outdoor advertising game.</h1>
-				<br><br><br><br><br><br><br>
-			</div>
-		-->
-		<!--</div>-->
 
 		<!-- Under Header -->
-		<div class="underheader">
+		<div class="underheader" data-aos="fade-in" data-aos-duration="2000">
 			<div class="container">
-				<div class="row" style="display: flex; flex-direction: row; justify-content: center; align-items: center; min-height: 450px;">
+				<div class="row" style="display: flex; flex-direction: row; justify-content: center; align-items: center; min-height: 450px; margin-top: 30px;">
 					<div class="welcome-caption col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-4 pb-4">
-            			<h1 class="phrase" style="color: white;">
-              				Changing the outdoor advertising game.
+            			<h1 class="phrase" class="ml9" style="color: white;">
+              				<span class="text-wrapper">
+								<span class="letter">
+									Changing the outdoor advertising game.
+								</span>
+							</span>
             			</h1>
            				 <p>
            				 	ADCHASE lets outdoor advertising agencies see their affects with public display advertising
@@ -78,15 +76,15 @@
 
 
 		<!-- Welcome -->
-		<div class="underheadimage">
+		<div class="underheadimage" data-aos="fade-in" data-aos-duration="3000">
 			<br><br><br>
-			<h1 id="placeholder"> Welcome to ADCHASE!</h1>
+			<h1 id="placeholder"> Welcome to <img src= "adchase_logo.png"> !</h1>
 		</div>
 
 		<br><br>
 
 		<!-- Section One -->
-		<div class="section1">
+		<div class="section1" data-aos="fade-left" data-aos-duration="600">
 			<div class="container">
 				<div class="row">
 
@@ -113,12 +111,12 @@
 		<br>
 
 		<!-- Section Two -->
-		<div class="section2">
+		<div class="section2" data-aos="fade-right" data-aos-duration="600">
 			<div class="container">
 				<div class="row">
 
 					<div class="photo-left col-sm-12 col-md-6 col-lg-6 col-xl-6">
-	          		  <img class="pb-4" src="a_train.png" alt="" style="max-width:400px; height: 400px; width: 100%;">
+	          		  <img class="pb-4" src="a_train.png" alt="" style="max-width:400px; height: 500px; width: 100%;">
 	          		</div>
 
 					<div class="caption-left col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -137,7 +135,7 @@
 		</div>
 
 		<!-- Section Three -->
-		<div class="section2">
+		<div class="section2" data-aos="slide-up" data-aos-duration="600">
 			<div class="container">
 				<div class="row">
 
@@ -288,6 +286,10 @@
 </footer>
 <!-- Footer -->
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 	</body>
 
 </html>

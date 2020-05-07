@@ -4,6 +4,12 @@
   <head>
     <title>ADCHASE</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script> 
+
+    <!-- Text animations -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Linking fonts from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
@@ -44,7 +50,7 @@
               <a href="product.html"> Product </a>
             </div>
             <div class="header-link ml-4 mr-4">
-              <a href="#"> FAQ </a>
+              <a href="faq.html"> FAQ </a>
             </div>
             <div class="header-link ml-4 mr-4">
               <a href="contact.html"> Contact Us </a>
@@ -55,8 +61,27 @@
         </div>
       </div>
 
+      <!-- Problem -->
+      <div class="problem" style="margin-top: 100px;">
+        <div class="container" data-aos="slide-right" data-aos-duration="1200">
+          <p style="font-size: 40px; background-color: #37E596;"> 
+            Outdoor advertisers <span style="color: #FFFFFF">can't</span> obtain accurate data on their customers. There is a 
+            <span style="color: #FFFFFF"> lack</span> of customized offers and most promotions go 
+            <span style="color: #FFFFFF">unnoticed or unused. </span>
+          </p>
+        </div>
+        <div class="container" data-aos="slide-left" data-aos-duration="2000">
+          <p style="font-size: 40px; background-color: #37E596; color: #FFFFFF;"> 
+            Fortunately, ADCHASE is here.
+          </p>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <h1 id="solution" style="text-align: center; min-height: 100px; margin-top: 40px;" data-aos="fade-in" data-aos-duration="3000"> Our Solution </h1>
+
       <!-- Cards -->
-      <section class="p-4 px-xl-0">
+      <section class="p-4 px-xl-0" style="margin-top: 10px;">
         <div class="coffee-cards mt-2">
           <div class="row ">
             <div class="col-12 col-sm-6 col-md-4  py-3">
@@ -286,7 +311,10 @@
       </footer>
       <!-- Footer -->
 
-
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+      AOS.init();
+      </script>
   </body>
 
 </html>

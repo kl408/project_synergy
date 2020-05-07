@@ -4,6 +4,12 @@
   <head>
     <title>ADCHASE</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script> 
+
+    <!-- Text animations -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Linking fonts from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
@@ -23,19 +29,19 @@
           <div class="logo">ADCHASE</div>
           <div class="header-links">
             <div class="header-link ml-4 mr-4">
-              Home
+              <a href="index.html"> Home </a>
             </div>
             <div class="header-link ml-4 mr-4">
-               <a href="#"> About </a>
+               <a href="about.html"> About </a>
             </div>
             <div class="header-link ml-4 mr-4">
-              <a href="#"> Product </a>
+              <a href="product.html"> Product </a>
             </div>
             <div class="header-link ml-4 mr-4">
-              <a href="#"> FAQ </a>
+              <a href="faq.html"> FAQ </a>
             </div>
             <div class="header-link ml-4 mr-4">
-              <a href="#"> Contact Us </a>
+              <a href="contact.html"> Contact Us </a>
             </div>
           </div>
            <!--<i class="fa fa-bars p-4" aria-hidden="true" style="font-size: 20px; cursor: pointer;"></i> -->
@@ -43,6 +49,199 @@
         </div>
       </div>
 
+      <!-- FAQ Header-->
+      <div class="help_section" data-aos="fade-in" data-aos-duration="1000">
+        <div class="container">
+          <div class="row" style="display: flex; flex-direction: row; justify-content: center; align-items: center; min-height: 450px;">
+            <div class="welcome-caption col-sm-12 col-md-6 col-lg-6 col-xl-6 pt-4 pb-4">
+                    <h1 class="phrase" style="color: white;">
+                        Frequently Asked Questions
+                    </h1>
+                  </div>
+  
+                  <div class="right-side col-sm-12 col-md-6 col-lg-6 col-xl-6 pb-4">
+                     <img src="question_clipart.png" alt="" style="max-height: 800px; width: 590px;">
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+
+    <!-- Welcome -->
+		<div class="underheadimage">
+			<br><br><br>
+			<h1 id="placeholder"> What may we help you with?</h1>
+    </div>
+
+    <!-- Options-->
+    <div class="container">
+      <div class="options">
+        <a href="#user" style="margin-left:100px; margin-right:700px;"> Users </a>
+        <a href="#agencies"> Advertising Agencies</a>
+      </div>
+    </div>
+
+    <!-- Question List -->
+    <div class="question_list">
+      <div class="user_list" id="user">
+        <h1 style="margin-left:30px; color:#FFFFFF;"> Users </h1>
+        <h1 class="question"> Can users exchange promotional deals?</h1>
+          <p class="answer"> 
+            Yes! ADCHASE has a trading system in which users
+            can automatically trade promotions they find based on interests.
+          </p>
+        <h1 class="question"> What kinds of products does ADCHASE promote?</h1>
+          <p class="answer">
+            Several products are promoted on ADCHASE's platform. We range from fashion
+            to food, electronics, sports, and more. ADCHASE continuously updates its database
+            with the latest deals.
+          </p>
+        <h1 class="question"> Are other users able to see my interests?</h1>
+          <p class="answer"> 
+            Users can view each other's interests throughout the platform. However, users can adjust
+            their privacy settings from public to friends only. 
+            <br> Users also have the option to trade publicly or friends only as well.
+          </p>
+      </div>
+      <br><br><br><br>
+      <div class="ad_list" id="agencies">
+        <h1 style="margin-left:30px; color:#FFFFFF;"> Advertising Agencies</h1>
+        <h1 class="question"> Where are advertisements optimized?</h1>
+          <p class="answer">
+            ADCHASE currently targets outdoor advertisements primarily in the subway stations of NYC.
+            We also have advertisements on digital rooftop displays of taxis and billboards throughout the city.
+          </p>
+        <h1 class="question"> How much does ADCHASE charge for cost per click? </h1>
+          <p class="answer">
+            ADCHASE charges 10 cents per click.
+          </p>
+        <h1 class="question"> Does ADCHASE take commission on product sales?</h1>
+          <p class="answer">
+            Yes. ADCHASE makes a 15% commission on sales below $100, a 10% commission on sales between $100 and $999,
+            and 5% commission on sales above $1,000.
+          </p>
+      </div>
+    </div>
+
+    <br><br>
+    <footer class="page-footer font-small blue-grey lighten-5">
+
+      <div style="background-color: #21d192;">
+        <div class="container">
+    
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+    
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0" style="color: black;">Get connected with us on social networks!</h6>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+    
+              <!-- Facebook -->
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+    
+            </div>
+            <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row-->
+    
+        </div>
+      </div>
+    
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+    
+        <!-- Grid row -->
+        <div class="row mt-3 dark-grey-text">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+    
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold">ADCHASE</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>Changing the outdoor advertising game with each advertisement in the city.</p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="dark-grey-text" href="#!">App</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">ADCHASE Rewards</a>
+            </p>
+         
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="dark-grey-text" href="#!">Your Account</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Help</a>
+            </p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> team@adchase.com</p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+    
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="color: #37E596;">© 2020 Copyright:
+        <a style="color: #37E596" href="index.html"> ADCHASE</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
   </body>
 
 </html>

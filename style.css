@@ -10,6 +10,10 @@ nav {
 }
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -50,7 +54,11 @@ nav {
   background: #37E596;
   color: black;
   height: 70px;
-  font-family: 'Krub'
+  font-family: 'Krub';
+  position: fixed; /* Sets navbar to fixed position*/
+  top: 0;
+  width: 100%;
+  z-index: 9999; /* To avoid overlapping */
 }
 
 .container {
@@ -101,6 +109,28 @@ nav {
 .phrase {
   font-family: 'Krub';
   color: #28CDC3;
+}
+
+/* Text animation */
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
 }
 
 
@@ -193,7 +223,7 @@ footer
 
 .mission-desc {
   font-size: 20px;
-  background-color: rgba(174, 214, 241, 0.4);
+  background-color: rgba(248, 222, 4, 0.7););
   opacity: 1.0;
   color: black;
 }
@@ -245,15 +275,25 @@ footer
 
 }
 
+.options {
+  font-size: 20px;
+}
+
 .question_list {
   font-family: 'Krub';
   background-color: rgba(69, 229, 190, 0.7);
 }
 
+
 .question {
   margin-top: 50px;
   margin-left: 80px;
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.answer {
+  font-size: 20px;
+  margin-left: 80px;
 }
 
 
